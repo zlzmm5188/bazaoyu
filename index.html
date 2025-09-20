@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="telegram-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Telegram</h2>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                </div>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item active">
+                    <div class="avatar">U</div>
+                    <div class="chat-info">
+                        <div class="chat-name">User Chat</div>
+                        <div class="last-message">Welcome to Telegram Web!</div>
+                    </div>
+                    <div class="chat-time">12:00</div>
+                </div>
+                <div class="chat-item">
+                    <div class="avatar">G</div>
+                    <div class="chat-info">
+                        <div class="chat-name">Group Chat</div>
+                        <div class="last-message">Hello everyone!</div>
+                    </div>
+                    <div class="chat-time">11:30</div>
+                </div>
+                <div class="chat-item">
+                    <div class="avatar">C</div>
+                    <div class="chat-info">
+                        <div class="chat-name">Channel</div>
+                        <div class="last-message">Latest updates...</div>
+                    </div>
+                    <div class="chat-time">10:15</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="avatar">U</div>
+                    <div class="header-text">
+                        <div class="chat-title">User Chat</div>
+                        <div class="chat-status">online</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn">📞</button>
+                    <button class="action-btn">📹</button>
+                    <button class="action-btn">⋮</button>
+                </div>
+            </div>
+
+            <div class="messages-container">
+                <div class="message incoming">
+                    <div class="message-content">
+                        <div class="message-text">Hello! Welcome to Telegram Web.</div>
+                        <div class="message-time">12:00</div>
+                    </div>
+                </div>
+                <div class="message outgoing">
+                    <div class="message-content">
+                        <div class="message-text">Thanks! This looks great.</div>
+                        <div class="message-time">12:01</div>
+                    </div>
+                </div>
+                <div class="message incoming">
+                    <div class="message-content">
+                        <div class="message-text">You can send messages, view chats, and more!</div>
+                        <div class="message-time">12:02</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-input-container">
+                <button class="attachment-btn">📎</button>
+                <input type="text" placeholder="Type a message..." class="message-input" id="messageInput">
+                <button class="send-btn" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
